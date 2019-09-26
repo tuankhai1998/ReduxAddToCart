@@ -58,7 +58,7 @@ const products = (state, actions) => {
     switch (actions.type) {
         case types.FILTER_PRODUCT:
             let { type, name } = actions.filter;
-            // console.log('-1',actions.filter.type === undefined  ? 'dung' : 'sai')
+            console.log(type,name)
             if (type === 'all') {
                 if (name === '') {
                     return [...state];

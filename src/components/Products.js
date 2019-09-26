@@ -25,20 +25,19 @@ function Products({ children, filter }) {
             }
            
         }
-        console.log('prev',prevType,prevName);
-        console.log('filter', filterItem.name, filterItem.type)
+
         filter(filterItem);
     }
 
     let filtertype = (filterType) => {
-        console.log('filterType', filterType);
+        // console.log('filterType', filterType);
         filterItem.type = filterType;
         setPrevType(filterType);
         return filterType;
     }
 
     let filtername = (filterName) => {
-        console.log('filterName', filterName);
+        // console.log('filterName', filterName);
         filterItem.name = filterName;
         setPrevName(filterName);
         return filterName;
